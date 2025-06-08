@@ -1,5 +1,5 @@
 import React from 'react'
-import Loginpage from './loginpage'
+import Loginpage from './AuthForm'
 
 export const Home = () => {
   return (

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const Password = () => {
+const PasswordForm = () => {
     const [username, setUsername] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [reEnterPassword, setReEnterPassword] = useState('');
@@ -84,4 +84,4 @@ const Password = () => {
     
 };
 
-export default Password;
+export default PasswordForm;

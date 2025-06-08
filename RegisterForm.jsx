@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const Register = () => {
+const RegisterForm = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [departmentFilter, setDepartmentFilter] = useState("");
   const [semesterFilter, setSemesterFilter] = useState("");
@@ -249,4 +249,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterForm;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
-const Loginpage=()=>{
+const AuthForm=()=>{
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -128,7 +128,7 @@ const Loginpage=()=>{
             <label>
               <input type="checkbox" /> Remember me
             </label>
-            <Link to="/password" className="forgot-link">Forgot password?</Link>
+            <Link to="/passwordForm" className="forgot-link">Forgot password?</Link>
           </div>
 
           <button type="submit" className="submit-btn">Login</button>
@@ -143,4 +143,4 @@ const Loginpage=()=>{
     </div>
     )
 }
-export default Loginpage
+export default AuthForm

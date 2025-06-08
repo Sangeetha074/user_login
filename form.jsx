@@ -112,7 +112,7 @@ const Form = () => {
         });
         setMessage("Registration Successful!");  
         setFormData({ Name: "", email: "", phone: "", dob: "", gender: "", Department: "", Semester: "", CGPA: "" });
-        Navigate('/register');
+        Navigate('/RegisterForm');
       } catch (error) {
         setMessage("Error: " + error.response?.data?.detail || "Something went wrong");
       }

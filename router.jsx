@@ -1,12 +1,12 @@
 import React from 'react'
 import {Routes,Route} from'react-router-dom'
 import Signup from './signup'
-import Register from './register'
 import Page from './page'
-import Password from './password'
 import Form from './form'
 import { Home } from './home'
-import Loginpage from './loginpage'
+import AuthForm from './AuthForm'
+import RegisterForm from './RegisterForm'
+import PasswordForm from './passwordForm'
 
 const Router = () => {
     return (
@@ -14,11 +14,11 @@ const Router = () => {
         <Routes>
           <Route>
             <Route path="/" element={<Home/>}></Route>
-            <Route path="/" element={<Loginpage/>}></Route>
+            <Route path="/AuthForm" element={<AuthForm/>}></Route>
             <Route path="/signup" element={<Signup/>}></Route>
-            <Route path="/register" element={<Register/>}></Route>
+            <Route path="/RegisterForm" element={<RegisterForm/>}></Route>
             <Route path="/page" element={<Page/>}></Route>
-            <Route path="/password" element={<Password/>}></Route>
+            <Route path="/passwordForm" element={<PasswordForm/>}></Route>
             <Route path="/form" element={<Form/>}></Route>
           </Route>
         </Routes>
